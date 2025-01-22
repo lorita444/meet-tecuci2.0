@@ -1,0 +1,760 @@
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+  
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Merriweather", serif;  
+}
+body{
+     background-image: url(resurse/fundal.JPG);
+     overflow-x: hidden; 
+    overflow-y: scroll;
+    background-attachment: scroll;
+}
+
+nav{
+    background-color:      #f5c000;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.chestie_meniu{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+    position: relative;
+}
+
+.linkuri_meniu{
+    color: white;
+    font-size: 25px;
+    font-family: "Merriweather", serif;
+    text-shadow: 1px 1px 1px rgb(25, 24, 24);
+
+}
+.istoric_cade {
+  display: none;
+  font-family: "Merriweather", serif;
+  text-shadow: 1px 1px 1px rgb(25, 24, 24);
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fcce27c5;
+  border: 1px solid #977600; 
+  padding: 5px;
+  z-index: 9999;
+}
+
+#istoric:hover + .istoric_cade {
+  display: block;
+}
+
+.istoric_cade a {
+  display: block; 
+  padding: 5px 10px;  
+  color:#eee;
+}
+.contact_cade {
+  display: none;
+  font-family: "Merriweather", serif;
+  text-shadow: 1px 1px 1px rgb(25, 24, 24);
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fcce27c5;
+  border: 1px solid #977600; 
+  padding: 5px;
+  z-index: 9999;
+}
+
+#contact:hover + .contact_cade {
+  display: block;
+}
+
+.contact_cade a {
+  display: block; 
+  padding: 5px 10px;  
+  color:#eee;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+.bara{
+    background-color:     #f5c00038;
+    width: 100%;
+    height: 25px;
+    color: #ffffff;
+    font: 16px "Merriweather";
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgb(25, 24, 24);
+}
+.bara p{
+    position: relative;
+    animation-name: stanga_dreapta;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes stanga_dreapta {
+    0%   { left:0px; top:0px;}
+    100% { left:93%; top:0px; color:#977600}
+}
+
+.poza_cu_text{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.poza_cu_text img{
+    display: block;
+     width: 100%;
+     
+}
+
+.text_deasupra{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    color: #fff; 
+    font-size: 50px; 
+    text-align: center;
+    font-family: "Merriweather", serif;
+    text-shadow: 1px 1px 1px rgb(25, 24, 24);
+}
+.text_deasupra2{
+    position: absolute;
+    top: 65%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    color: #fff; 
+    font-size: 80px; 
+    text-align: center;
+    font-family: "Merriweather", serif;
+    text-shadow: 1px 1px 1px rgb(25, 24, 24);
+}
+
+.text_deasupra3{
+  position: absolute;
+  top: 80%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);  
+  color: #fff; 
+  background-color: #eeeeee4a;
+  font-size: 35px; 
+  text-align: center;
+  font-family: "Merriweather", serif;
+  text-shadow: 1px 1px 1px rgb(25, 24, 24);
+}
+
+.istoric_tecuci2{
+    padding-top: 20px;
+    display: grid;
+    place-items: center;
+
+}
+.istoric_tecuci_titlu{
+  width: 30%;
+}
+.istoric_tecuci_text{
+    background-color: #f5c00040;
+    border-radius: 15px;
+    padding: 15px;
+    display: none;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(69, 66, 66);
+}
+.istoric_tecuci:hover .istoric_tecuci_text{
+    display: block;
+}
+
+/* .istoric_tecuci:hover .poza3{
+  display: none;
+}
+.istoric_tecuci:hover .poza4{
+  display: none;
+} */
+.istoric_mustar2{
+  margin-bottom: 10%;
+  padding-top: 20px; 
+  display: grid;
+  place-items: center;    
+}
+.istoric_mustar_titlu{
+    width: 30%;
+    float: right;
+}
+
+.istoric_mustar_text{
+    display: none;
+    padding: 15px;
+    background-color: #f5c00040;
+    border-radius: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(69, 66, 66);
+    
+}
+.istoric_mustar:hover .istoric_mustar_text{
+    display: block;
+}
+
+.istoric_tecuci_titlu {
+    position: relative;
+    display: inline-block;
+}
+
+.poza1{
+    position: absolute;
+    width: 19%;
+    transform: rotate(-18deg);
+    margin-left: 30px;
+    margin-top: 35px;
+    transition: opacity 0.5s ease;
+}
+.poza2{
+    position: absolute;
+    width: 20%;
+    transform: rotate(18deg);
+    margin-left: 950px;
+    margin-top: 35px;
+    transition: opacity 0.5s ease;
+}
+.poza3{
+    position:absolute;
+    width: 20%;
+    transform: rotate(18deg);
+    margin-left: 30px;
+    margin-top: 18%;
+    transition: opacity 0.5s ease;
+}
+.poza4{
+    position: absolute;
+    width:21%;
+    transform: rotate(-18deg);
+    margin-left: 950px;
+    margin-top: 18%;
+    transition: opacity 0.5s ease;
+}
+
+.istoric_tecuci:hover .poza1{
+    opacity: 0;
+}
+.istoric_tecuci:hover .poza2{
+    opacity: 0;
+}
+
+
+h1 {
+   
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(69, 66, 66); 
+    font-size: 20px; 
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f5c00046;
+    border-radius: 15px;
+    border-style: groove;
+    border-color: #f5c000;
+}
+
+.unde {
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(69, 66, 66);
+    text-align: center;
+    padding: 20px;
+    background-color: #f5c0004f;
+    position: relative;
+  }
+
+  .unde::before {
+    content: "U";
+    animation: scris 5s linear 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes scris{
+    0%{content: "U";}
+    7%{content: "Un";}
+    14%{content: "Und";}
+    21%{content: "Unde";}
+    28%{content: "Unde ";}
+    35%{content: "Unde n";}
+    42%{content: "Unde ne";}
+    49%{content: "Unde ne ";}
+    56%{content: "Unde ne a";}
+    63%{content: "Unde ne af";}
+    70%{content: "Unde ne afl";}
+    77%{content: "Unde ne afla";}
+    84%{content: "Unde ne aflam";}
+    91%{content: "Unde ne aflam?";}
+    100%{content: "Unde ne aflam?";}
+  }
+
+.asezare{
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(69, 66, 66);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    width: 70%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 200px;
+    border-radius: 15px;
+    background-color: #f5c0005b;
+}
+.indicatii{
+  text-align: center;
+  display: grid;
+  place-items: center;
+  margin-bottom: 5%;
+}
+.indicatii_text{
+  margin-top: 2%; 
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(69, 66, 66);
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+    
+}
+.button{
+    width: 40px;
+    height: 25px;
+    border-radius: 15px;
+    font-family: "Merriweather", serif;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(69, 66, 66);
+    background-color: rgb(244, 240, 240);
+    border: 2px solid #f5c000;
+}
+.button:hover{
+    background-color: #f5c000;
+}
+
+.iframe-container {
+    display: none;
+    background-color:#f5c000;
+    padding: 5px;
+    margin-bottom: 5%;
+  }
+  
+  #showMap:checked ~ .iframe-container {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .bara2{
+    background-color: #f5c00038;
+    width: 100%;
+    height: 25px;
+    color: #ffffff;
+    font: 16px "Merriweather";
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgb(25, 24, 24);
+}
+.bara2 p{
+    position: relative;
+    animation-name: stanga_dreapta2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes stanga_dreapta2 {
+    0%   { left:0px; top:0px;}
+    100% { left:60%; top:0px; color:#977600}
+}
+.continut_contact {
+    color: #ffffff;
+    position: relative;
+    font: 25px "Merriweather";
+    text-shadow: 1px 1px 1px rgb(25, 24, 24);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .Adresa{
+    background-color: #f5c00066;
+    border-radius: 15px;
+    padding: 10px;
+    width: 40%;
+    margin-left: 55%;
+    margin-top: 30%;
+  }
+  .Email{
+    background-color: #f5c00066;
+    border-radius: 15px;
+    padding: 10px;
+    width: 40%;
+    margin-top: 30%;
+    
+  }
+  .Telefon{
+    background-color: #f5c00066;
+    border-radius: 15px;
+    padding: 10px;
+    width: 40%;
+    margin-left:55% ;
+  }
+  .Telefon_verde{
+    background-color: #f5c00066;
+    border-radius: 15px;
+    padding: 10px;
+    width: 40%;
+  }
+
+  .adresa_pbn {
+    color: black;
+    padding-bottom: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0; 
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.5s ease;
+  }
+  
+  .Adresa:hover .adresa_pbn {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; 
+  }
+  .email {
+    color: black;
+    padding-bottom: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0; 
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.5s ease;
+  }
+  
+  .Email:hover .email {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; 
+  }
+  .tel {
+    color: black;
+    padding-bottom: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0; 
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.5s ease;
+  }
+  
+  .Telefon:hover .tel {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; 
+  }
+  .tel_verde {
+    color: black;
+    padding-bottom: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0; 
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.5s ease;
+  }
+  
+  .Telefon_verde:hover .tel_verde {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; 
+  }
+  .Poza1{
+    position: absolute;
+    width: 19%;
+    transform: rotate(18deg);
+    margin-left: 30px;
+    margin-top: 15%;
+    transition: opacity 0.5s ease;
+}
+.Poza2{
+    position: absolute;
+    width: 20%;
+    transform: rotate(-18deg);
+    margin-left: 78%;
+    margin-top: 15%;
+    transition: opacity 0.5s ease;
+}
+
+.ce{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font: 40px "Merriweather";
+    text-shadow: 1px 1px 1px rgb(25, 24, 24);
+    background-color: #f5c00059;
+}
+.ce::before {
+    content: "C";
+    animation: scris2 5s linear 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes scris2{
+    0%{content: "C";}
+    8%{content: "Ce";}
+    16%{content: "Ce ";}
+    24%{content: "Ce m";}
+    32%{content: "Ce ma";}
+    40%{content: "Ce mai";}
+    48%{content: "Ce mai ";}
+    56%{content: "Ce mai e";}
+    64%{content: "Ce mai e ";}
+    72%{content: "Ce mai e n";}
+    80%{content: "Ce mai e no";}
+    88%{content: "Ce mai e nou";}
+    100%{content: "Ce mai e nou?";}
+
+  }
+  .stiri{
+    color: #ffffff;
+    position: relative;
+    font-family: "Merriweather";
+    text-shadow: 1px 1px 1px rgb(25, 24, 24);
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    justify-items: center;
+    margin-top: 5%;
+  }
+  .stire1 img{
+    width: 30%;
+    margin-bottom: 2%;
+  }
+  .titlu1{
+    font-size: 23px;
+    margin-bottom: 2%;
+    background-color: #e4b40566;
+    width: 55%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .cont1{
+    width: 80%;
+    background-color: #d6ac025a;
+    border-radius: 15px;
+    font-size: 7px;
+    padding: 10px;
+    margin: auto; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: height 3s ,width 5s;
+    transition-delay:2s;
+    transition-timing-function: ease-in-out;
+}  
+.cont1:hover{
+    font-size: 17px;
+}
+
+.carte{
+  width: 100%;
+}
+
+.carti{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.butonn{
+  margin: 0 auto;
+  width: 10%;
+  height: 50px;
+  margin-bottom: 7%;
+  margin-left: 45%;
+}
+button {
+  border-radius: 15px;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(69, 66, 66, 0.724);
+  background-color: #ffce1bc6;
+  border: 5px solid #ffce1b;
+}
+
+button:hover {
+  background-color: #FFB300;
+}
+
+#photo{
+  width: 60%;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 19%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.problema{
+  margin-top: 7%;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+  color: rgba(16, 13, 0, 0.587);
+  text-shadow: 1px 1px 1px rgba(21, 19, 19, 0.854);
+}
+
+.formular_titlu{
+  margin-top: 7%;
+  margin-bottom: 3%;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(21, 19, 19, 0.854);
+  font-size: 20px;
+}
+
+.formular {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f7ff1b3f;
+  border-radius: 15px;
+  padding: 10px;
+  width: 65%;
+  margin-top: 5%;
+  margin-left: 17%;
+  margin-bottom: 5%;
+}
+
+.formular_titlu {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+#status {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+  
+   
