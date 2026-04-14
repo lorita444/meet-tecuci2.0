@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Tecuci -> Istoric</title>
+    <title>Meet Tecuci - Istoric</title>
     <link rel="stylesheet" href="stileto.css">
     <link rel="icon" type="image/x-icon" href="resurse/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,93 +11,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="continut_nav">
+    <header>
         <nav>
-            <img class="logo" src="resurse/logo.png" alt="">
+            <a href="acasa.html">
+                <img class="logo" src="resurse/logo.png" alt="Logo Meet Tecuci">
+            </a>
             <ul class="pff">
                 <li class="chestie_meniu">
                     <a href="acasa.html" class="linkuri_meniu">Acasă</a>
                 </li>
                 <li class="chestie_meniu">
-                    <a href="istoric.html" class="linkuri_meniu" id="istoric">Istoric</a>
-                    <div class="istoric_cade">
-                        <a href="istoric.html">Istoric Tecuci</a>
-                        <a href="istoric.html">Istoric Muștar</a>
+                    <a href="istoric.html" class="linkuri_meniu" style="color: var(--text-dark);">Istoric</a>
+                    <div class="dropdown_content">
+                        <a href="istoric.html#tecuci">Istoric Tecuci</a>
+                        <a href="istoric.html#mustar">Istoric Muștar</a>
                     </div>
                 </li>
-                
                 <li class="chestie_meniu">
-                        <a href="asezare.html" class="linkuri_meniu">Asezare</a>
+                    <a href="asezare.html" class="linkuri_meniu">Așezare</a>
+                </li>
                 <li class="chestie_meniu">
                     <a href="noutati.html" class="linkuri_meniu">Noutăți</a>
                 </li>
                 <li class="chestie_meniu">
-                    <a href="contact.html" class="linkuri_meniu" id="contact">Contact</a>
-                    <div class="contact_cade">
-                        <a href="contact.html">Adresa</a>
-                        <a href="contact.html">Email</a>
-                        <a href="contact.html">Telefon</a>
-                        <a href="contact.html">Telefon verde</a>
+                    <a href="contact.html" class="linkuri_meniu">Contact</a>
+                    <div class="dropdown_content">
+                        <a href="contact.html">Detalii Contact</a>
                     </div>
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
+
     <div class="bara">
-        <p>Mustar City </p>
-    </div>
-    <div class="poza_cu_text">
-        <img src="resurse/strgal.jpg" alt="">
-        <div class=text_deasupra>O privire in trecutul</div>
-        <div class=text_deasupra2>TECUCIULUI</div>         
+        <p>Mustar City - Descoperiți istoria unică a orașului!</p>
     </div>
 
-    <div class="istoric_tecuci">
-        <img class="poza1" src="resurse/imgtec1.jpg" alt="">
-        <img class="poza2" src="resurse/fabrica.jpg" alt="">
-        <div class="istoric_tecuci2">
-            <div class="istoric_tecuci_text">
-                <p id="istoric_tecuci_text">
-                    Tecuci, oraș din județul Galați, are o istorie bogată, fiind atestat documentar pentru prima dată în 1435, într-un hrisov emis de Alexandru cel Bun. Poziționat strategic în Moldova, la intersecția unor rute comerciale importante, Tecuciul a fost încă din Evul Mediu un târg activ, cunoscut pentru agricultură și comerț. Numele său, de origine posibil cumană sau pecenegă, sugerează existența unei așezări din vremuri străvechi.
-                
-                În secolele următoare, orașul a crescut ca centru economic și social, atrăgând meșteșugari și comercianți din diverse zone. Deși a fost afectat de raidurile turco-tătare, Tecuciul și-a revenit datorită poziției sale avantajoase. În secolul al XIX-lea, odată cu reformele lui Alexandru Ioan Cuza, originar din regiune, orașul a beneficiat de modernizare. Conectarea la rețeaua feroviară în 1879 a stimulat comerțul, iar Tecuciul a devenit renumit pentru exporturile agricole și producția locală, inclusiv muștarul, care avea să devină un simbol al orașului.
-                
-                În perioada interbelică, Tecuciul era un oraș prosper, cu o populație diversă și o economie bazată pe agricultură, industrie ușoară și meșteșuguri. Cele două războaie mondiale au afectat orașul, dar Tecuciul a reușit să-și recapete statutul de centru regional important. În timpul regimului comunist, a fost industrializat, cu fabrici și infrastructură nouă, iar muștarul de Tecuci a continuat să fie un produs emblematic.
-                
-                După 1989, Tecuciul a intrat într-o perioadă de tranziție, cu provocări economice, dar și oportunități de dezvoltare. Orașul este astăzi cunoscut pentru Muzeul Mixt „Teodor Cincu”, pentru tradițiile locale și pentru celebrul muștar de Tecuci. Moștenirea sa istorică, culturală și economică face din Tecuci un simbol al continuității, care îmbină trecutul cu modernitatea.
-                </p>
+    <main class="full-width">
+        <section class="hero_section">
+            <img src="resurse/strgal.jpg" alt="Fond Istoric Tecuci" class="hero_bg">
+            <div style="z-index: 10;">
+                <div class="hero_text_1">O privire în trecutul</div>
+                <div class="hero_text_2">TECUCIULUI</div>
             </div>
-            <div class="istoric_tecuci_titlu">
-                <h1 id="istoric_tecuci_title">Istoric Tecuci</h1>
-            </div>
+        </section>
+
+        <!-- Containerul limiteaza continutul la un max-width in interiorul main-ului de full-width -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h1 id="tecuci" class="page_title glass-panel">Istoric Tecuci</h1>
+            
+            <section class="istoric_grid">
+                <div class="istoric_card glass-panel">
+                    <h2>De la târg medieval la oraș modern</h2>
+                    <div class="istoric_card_content">
+                        <div class="istoric_images">
+                            <img src="resurse/imgtec1.jpg" alt="Poza de epoca Tecuci 1" loading="lazy">
+                            <img src="resurse/fabrica.jpg" alt="Fabrica Tecuci Veche" loading="lazy">
+                        </div>
+                        <div class="istoric_text">
+                            Tecuci, oraș din județul Galați, are o istorie bogată, fiind atestat documentar pentru prima dată în 1435, într-un hrisov emis de Alexandru cel Bun. Poziționat strategic în Moldova, la intersecția unor rute comerciale importante, Tecuciul a fost încă din Evul Mediu un târg activ, cunoscut pentru agricultură și comerț. Numele său, de origine posibil cumană sau pecenegă, sugerează existența unei așezări din vremuri străvechi.
+
+                            În secolele următoare, orașul a crescut ca centru economic și social, atrăgând meșteșugari și comercianți din diverse zone. Deși a fost afectat de raidurile turco-tătare, Tecuciul și-a revenit datorită poziției sale avantajoase. În secolul al XIX-lea, odată cu reformele lui Alexandru Ioan Cuza, originar din regiune, orașul a beneficiat de modernizare. Conectarea la rețeaua feroviară în 1879 a stimulat comerțul, iar Tecuciul a devenit renumit pentru exporturile agricole și producția locală, inclusiv muștarul, care avea să devină un simbol al orașului.
+
+                            În perioada interbelică, Tecuciul era un oraș prosper, cu o populație diversă și o economie bazată pe agricultură, industrie ușoară și meșteșuguri. Cele două războaie mondiale au afectat orașul, dar Tecuciul a reușit să-și recapete statutul de centru regional important. În timpul regimului comunist, a fost industrializat, cu fabrici și infrastructură nouă, iar muștarul de Tecuci a continuat să fie un produs emblematic.
+
+                            După 1989, Tecuciul a intrat într-o perioadă de tranziție, cu provocări economice, dar și oportunități de dezvoltare. Orașul este astăzi cunoscut pentru Muzeul Mixt „Teodor Cincu”, pentru tradițiile locale și pentru celebrul muștar de Tecuci. Moștenirea sa istorică, culturală și economică face din Tecuci un simbol al continuității, care îmbină trecutul cu modernitatea.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h1 id="mustar" class="page_title glass-panel" style="margin-top: 80px;">Istoric Muștar</h1>
+            
+            <section class="istoric_grid" style="margin-bottom: 60px;">
+                <div class="istoric_card glass-panel">
+                    <h2>Tradiția gustului autentic</h2>
+                    <div class="istoric_card_content reverse">
+                        <div class="istoric_images">
+                            <img src="resurse/Tecuci-in-anul-1907-1.jpg" alt="Tecuci anul 1907" loading="lazy">
+                            <img src="resurse/muzeu.jpg" alt="Muzeul Tecuci" loading="lazy">
+                        </div>
+                        <div class="istoric_text">
+                            Muștarul de Tecuci este unul dintre cele mai renumite produse tradiționale din România, cu o istorie care își are rădăcinile în secolul al XIX-lea. În această perioadă, Tecuciul, un important centru agricol și comercial, a devenit cunoscut pentru producția sa de muștar datorită accesului la ingrediente de calitate și rețetelor locale autentice.
+
+                            Prima fabrică de muștar din Tecuci a fost înființată la sfârșitul secolului al XIX-lea, folosind semințe de muștar cultivate în zona subcarpatică a Moldovei, renumită pentru solul său bogat. Aceste semințe, combinate cu oțet de calitate și mirodenii naturale, au dat naștere unui produs cu o aromă deosebită, care a câștigat rapid popularitate.
+
+                            În perioada interbelică, muștarul de Tecuci a devenit un produs emblematic, fiind apreciat atât pe plan local, cât și în alte regiuni ale țării. Calitatea sa a fost recunoscută în mod oficial, iar muștarul produs aici a fost inclus în meniurile festive și comerciale din întreaga țară.
+
+                            În timpul regimului comunist, producția de muștar a fost integrată în sistemul industrializat, iar fabricile din Tecuci au continuat să producă acest condiment popular, păstrând rețetele tradiționale. Marca „Muștar de Tecuci” a rămas sinonimă cu un produs de calitate, apreciat pentru gustul său unic, fie că era dulce, iute sau cu diverse arome.
+
+                            După 1989, muștarul de Tecuci a reușit să-și mențină renumele, devenind un simbol al orașului și un brand recunoscut în întreaga țară. Fabricat și astăzi după rețete tradiționale, acesta continuă să fie un produs apreciat, păstrând legătura cu istoria și tradițiile locului.
+
+                            Astăzi, muștarul de Tecuci este nu doar o delicatesă culinară, ci și o parte importantă a identității culturale și economice a orașului, fiind un simbol al continuității și al mândriei locale.
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <img class="poza3" src="resurse/Tecuci-in-anul-1907-1.jpg" alt="">
-        <img class="poza4" src="resurse/muzeu.jpg" alt="">
-    </div>
-    
-    <div class="istoric_mustar">
-        <div class="istoric_mustar2">
-            <div class="istoric_mustar_titlu">
-                <h1 id="istoric_mustar_title">Istoric muștar</h1>
-            </div>
-            <div class="istoric_mustar_text">
-                <p id="istoric_mustar_text">
-                    Muștarul de Tecuci este unul dintre cele mai renumite produse tradiționale din România, cu o istorie care își are rădăcinile în secolul al XIX-lea. În această perioadă, Tecuciul, un important centru agricol și comercial, a devenit cunoscut pentru producția sa de muștar datorită accesului la ingrediente de calitate și rețetelor locale autentice.
+    </main>
 
-Prima fabrică de muștar din Tecuci a fost înființată la sfârșitul secolului al XIX-lea, folosind semințe de muștar cultivate în zona subcarpatică a Moldovei, renumită pentru solul său bogat. Aceste semințe, combinate cu oțet de calitate și mirodenii naturale, au dat naștere unui produs cu o aromă deosebită, care a câștigat rapid popularitate.
-
-În perioada interbelică, muștarul de Tecuci a devenit un produs emblematic, fiind apreciat atât pe plan local, cât și în alte regiuni ale țării. Calitatea sa a fost recunoscută în mod oficial, iar muștarul produs aici a fost inclus în meniurile festive și comerciale din întreaga țară.
-
-În timpul regimului comunist, producția de muștar a fost integrată în sistemul industrializat, iar fabricile din Tecuci au continuat să producă acest condiment popular, păstrând rețetele tradiționale. Marca „Muștar de Tecuci” a rămas sinonimă cu un produs de calitate, apreciat pentru gustul său unic, fie că era dulce, iute sau cu diverse arome.
-
-După 1989, muștarul de Tecuci a reușit să-și mențină renumele, devenind un simbol al orașului și un brand recunoscut în întreaga țară. Fabricat și astăzi după rețete tradiționale, acesta continuă să fie un produs apreciat, păstrând legătura cu istoria și tradițiile locului.
-
-Astăzi, muștarul de Tecuci este nu doar o delicatesă culinară, ci și o parte importantă a identității culturale și economice a orașului, fiind un simbol al continuității și al mândriei locale.
-                </p>
-            </div>
-        </div>
-    </div>
-    
-    <script src = "istoric.js"></script>
+    <footer>
+        <p>&copy; 2026 Meet Tecuci. Toate drepturile rezervate.</p>
+    </footer>
 </body>
 </html>

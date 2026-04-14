@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Tecuci -> Contact</title>
+    <title>Meet Tecuci - Contact</title>
     <link rel="stylesheet" href="stileto.css">
     <link rel="icon" type="image/x-icon" href="resurse/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,94 +11,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="continut_nav">
+    <header>
         <nav>
-            <img class="logo" src="resurse/logo.png" alt="">
+            <a href="acasa.html">
+                <img class="logo" src="resurse/logo.png" alt="Logo Meet Tecuci">
+            </a>
             <ul class="pff">
                 <li class="chestie_meniu">
                     <a href="acasa.html" class="linkuri_meniu">Acasă</a>
                 </li>
                 <li class="chestie_meniu">
-                    <a href="istoric.html" class="linkuri_meniu" id="istoric">Istoric</a>
-                    <div class="istoric_cade">
-                        <a href="istoric.html">Istoric Tecuci</a>
-                        <a href="istoric.html">Istoric Muștar</a>
+                    <a href="istoric.html" class="linkuri_meniu">Istoric</a>
+                    <div class="dropdown_content">
+                        <a href="istoric.html#tecuci">Istoric Tecuci</a>
+                        <a href="istoric.html#mustar">Istoric Muștar</a>
                     </div>
                 </li>
-                
                 <li class="chestie_meniu">
-                        <a href="asezare.html" class="linkuri_meniu">Asezare</a>
+                    <a href="asezare.html" class="linkuri_meniu">Așezare</a>
+                </li>
                 <li class="chestie_meniu">
                     <a href="noutati.html" class="linkuri_meniu">Noutăți</a>
                 </li>
                 <li class="chestie_meniu">
-                    <a href="contact.html" class="linkuri_meniu" id="contact">Contact</a>
-                    <div class="contact_cade">
-                        <a href="contact.html">Adresa</a>
-                        <a href="contact.html">Email</a>
-                        <a href="contact.html">Telefon</a>
-                        <a href="contact.html">Telefon verde</a>
-                    </div>
+                    <a href="contact.html" class="linkuri_meniu" style="color: var(--text-dark);">Contact</a>
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
+
     <div class="bara2">
-        <p>Program primarie: Luni -> Joi: 8:00 - 16:30; Vineri: 8:00 - 14:00 </p>
-    </div>
-    <img class="Poza1" src="resurse/flori.jpg" alt="">
-    <img class="Poza2" src="resurse/primaria.png" alt="">
-    <div class="continut_contact">
-        <div class="Adresa"> 
-            <div class="adresa_titlu">Adresa</div>
-            <div class="adresa_pbn">Str. 1 decembrie 1918, nr. 66</div>
-        </div>
-        <div class="Email"> Email
-            <div class="email">registratura@municipiultecuci.ro</div>
-        </div>
-        <div class="Telefon"> Telefon
-            <div class="tel">0372.364.111</div>
-        </div>
-        <div class="Telefon_verde"> Telefon verde
-            <div class="tel_verde">0.800.800.111</div>
-        </div>
+        <p>Program primărie: Luni - Joi: 8:00 - 16:30 | Vineri: 8:00 - 14:00</p>
     </div>
 
-    <div class = "problema">
-        <div>Ai vreo problema?</div>
-        <div>Scrie-ne mai jos!</div>
-    </div>
+    <main>
 
-    <div class="formular">
-        <div class = "formular_titlu">Formular de Reclamații</div>
-        <form id="reclamatie-form">
-            <label for="nume">Nume complet:</label>
-            <input type="text" id="nume" name="nume" placeholder="Introduceți numele" required>
+
+        <div class="contact_grid">
+            <div class="contact_item glass-panel" id="adresa"> 
+                <h3>Adresa</h3>
+                <p>Str. 1 Decembrie 1918, nr. 66</p>
+            </div>
+            <div class="contact_item glass-panel" id="email"> 
+                <h3>Email</h3>
+                <p>registratura@municipiultecuci.ro</p>
+            </div>
+            <div class="contact_item glass-panel" id="telefon"> 
+                <h3>Telefon</h3>
+                <p>0372.364.111</p>
+            </div>
+            <div class="contact_item glass-panel"> 
+                <h3>Telefon Verde</h3>
+                <p>0.800.800.111</p>
+            </div>
+        </div>
+
+        <section class="form_section glass-panel">
+            <h2>Ai o problemă? Transmite-ne o reclamație!</h2>
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Introduceți adresa de email" required>
+            <form id="reclamatie-form" class="formular">
+                <div class="form_group">
+                    <label for="nume">Nume complet:</label>
+                    <input type="text" id="nume" name="nume" placeholder="Introduceți numele complet" required>
+                </div>
 
-            <label for="telefon">Telefon:</label>
-            <input type="tel" id="telefon" name="telefon" placeholder="Introduceți numărul de telefon" required>
+                <div class="form_group">
+                    <label for="email_form">Email:</label>
+                    <input type="email" id="email_form" name="email" placeholder="Introduceți adresa de email" required>
+                </div>
 
-            <label for="categorie">Categorie:</label>
-            <select id="categorie" name="categorie" required>
-                <option value="" disabled selected>Selectați categoria</option>
-                <option value="">Ordine publica</option>
-                <option value="">Infrastructură</option>
-                <option value="">Cultură și educație</option>
-                <option value="">Transport</option>
-                <option value="">Curățenie</option>
-                <option value="">Altceva</option>
-            </select>
+                <div class="form_group">
+                    <label for="telefon_form">Telefon:</label>
+                    <input type="tel" id="telefon_form" name="telefon" placeholder="Introduceți numărul de telefon rezonabil" required>
+                </div>
 
-            <label for="descriere">Descrierea reclamației:</label>
-            <textarea id="descriere" name="descriere" placeholder="Descrieți problema..." rows="5" required></textarea>
+                <div class="form_group">
+                    <label for="categorie">Categorie:</label>
+                    <select id="categorie" name="categorie" required>
+                        <option value="" disabled selected>Selectați categoria problemei</option>
+                        <option value="ordine">Ordine publică</option>
+                        <option value="infrastructura">Infrastructură</option>
+                        <option value="cultura">Cultură și educație</option>
+                        <option value="transport">Transport</option>
+                        <option value="curatenie">Curățenie</option>
+                        <option value="altceva">Altceva</option>
+                    </select>
+                </div>
 
-            <button type="submit">Trimite reclamația</button>
-        </form>
-        <p id="status" class="hidden"></p>
-    </div>
-    <script src = 'reclamatie.js'></script>
+                <div class="form_group">
+                    <label for="descriere">Descrierea reclamației:</label>
+                    <textarea id="descriere" name="descriere" placeholder="Descrieți pe larg problema observată..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="custom_btn" style="margin-top: 20px;">Trimite Reclamația</button>
+                <div id="status" class="hidden"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meet Tecuci. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="reclamatie.js"></script>
 </body>
 </html>
